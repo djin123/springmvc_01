@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+">
+	
+	<!--自定义控制器-->
+	<bean id="/myController" class="cn.com.djin.springmvc.controller.MyController"/>
+	
+	<!--使用springMVC提供的控制器-->
+	<bean id="/show2" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="/WEB-INF/jsp/show2.jsp"/>
+	</bean>
+	
+</beans>
