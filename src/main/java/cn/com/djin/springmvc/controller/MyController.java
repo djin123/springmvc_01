@@ -18,6 +18,7 @@ public class MyController implements Controller {
         //往modelAndView对象中设置跳转的页面路径，可以通过此配置实现页面跳转
         //此时的页面跳转默认为转发
         modelAndView.setViewName("/WEB-INF/jsp/show.jsp");
+        System.out.println("123123");
         return modelAndView;
     }
 }
