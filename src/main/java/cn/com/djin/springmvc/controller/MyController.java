@@ -19,6 +19,7 @@ public class MyController implements Controller {
         //此时的页面跳转默认为转发
         modelAndView.setViewName("/WEB-INF/jsp/show.jsp");
         System.out.println("123123");
+        System.out.println("123123");
         return modelAndView;
     }
 }
